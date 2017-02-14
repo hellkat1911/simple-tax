@@ -5,7 +5,7 @@
 
 # Taxes 2.0
 import json
-from os import exit
+from sys import exit
 
 start = 'February 9th, 2017'
 
