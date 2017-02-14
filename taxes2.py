@@ -9,12 +9,12 @@ from sys import exit
 
 start = 'February 9th, 2017'
 
-def write_info(file, i, info):
+def write_info(file, i, info): #open/append/close
     fo = open(file, i)
     fo.write(info + "\n")
     fo.close()
 
-def running_tax_rate():
+def running_tax_rate(): #gets average of percentages of taxes paid
     rtr = []
     percent = open('percent.txt', 'r')
     for line in percent:
@@ -24,7 +24,7 @@ def running_tax_rate():
     print("*" * 8)
     percent.close()
 
-def total_income():
+def total_income(): #total income (dollar amt) for all supplied dates
     ti = []
     f = open('records.txt', 'r')
     for line in f:
@@ -33,7 +33,7 @@ def total_income():
     print("*" * 8)
     f.close()
 
-def total_taxes():
+def total_taxes(): #total taxes paid (dollar amt)
     tt = []
     dollars = open('dollar.txt', 'r')
     for line in dollars:
