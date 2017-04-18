@@ -90,4 +90,5 @@ def find_taxes():
         print('Ok, exiting...')
         exit()
 
-find_taxes()
+if __name__ == "__main__":
+    find_taxes()
